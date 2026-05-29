@@ -3,6 +3,9 @@ const tg = window.Telegram && window.Telegram.WebApp ? window.Telegram.WebApp : 
 if (tg) {
     tg.expand();
     tg.ready();
+    console.log("Telegram Web App initialized");
+} else {
+    console.warn("Not running inside Telegram Web App");
 }
 
 let currentLang = localStorage.getItem('lang') || 'en';
@@ -214,7 +217,49 @@ function updateCartUI() {
         if (cart.length > 0) {
             tg.MainButton.text = `${dictionary[currentLang]['checkout-btn'].toUpperCase()} ($${totalSum.toFixed(2)})`;
             tg.MainButton.show();
-        } else { tg.MainButton.hide(); }
+        } else {
+            tg.MainButton.hide();
+        }
+    }
+}
+
+// --- Исправленная функция отправки заказа ---
+function processCheckout() {
+    if (cart.length === 0) {
+        if (tg && tg.HapticFeedback) tg.HapticFeedback.notificationOccurred('error');
+        return;
+    }
+
+    // Формируем данные точно как ожидает бот
+    const orderData = {
+        action: 'checkout',
+        lang: currentLang,
+        total_price: parseFloat(cart.reduce((sum, i) => sum + (i.price * i.qty), 0).toFixed(2)),
+        items: cart.map(i => ({
+            id: i.id,
+            name: i.name.en,
+            quantity: i.qty,
+            price: i.price
+        }))
+    };
+
+    console.log("Sending order to bot:", orderData);
+
+    if (tg) {
+        try {
+            // Отправляем данные в бота
+            tg.sendData(JSON.stringify(orderData));
+            console.log("Order sent successfully");
+            // Закрываем Web App после отправки
+            tg.close();
+        } catch (error) {
+            console.error("sendData failed:", error);
+            alert("Unable to send order. Please try again from the bot's store button.");
+        }
+    } else {
+        // Для локального тестирования
+        console.log("Order data (test mode):", orderData);
+        alert("Order placed in test mode.\nPlease run inside Telegram bot for real checkout.");
     }
 }
 
@@ -276,50 +321,10 @@ document.getElementById('product-modal').addEventListener('click', (e) => {
     if (e.target.id === 'product-modal') closeModal();
 });
 
-// --- Checkout ---
-function processCheckout() {
-    if (cart.length === 0) return;
-
-    const orderData = {
-        action: 'checkout',
-        lang: currentLang,
-        total: cart.reduce((sum, i) => sum + (i.price * i.qty), 0).toFixed(2),
-        items: cart.map(i => ({ id: i.id, name: i.name.en, qty: i.qty, price: i.price }))
-    };
-
-    if (tg) {
-        // Если открыто как Reply Keyboard, это сработает и закроет Web App
-        if (tg.sendData) {
-            try {
-                tg.sendData(JSON.stringify(orderData));
-            } catch (error) {
-                console.error("sendData не сработал. Возможно, открыто через Inline-кнопку", error);
-            }
-        }
-
-        // ВАЖНО: Если ты используешь Cloudflare Workers, идеальный способ для Inline-кнопок
-        // это отправка данных прямым POST-запросом (раскомментируй и вставь URL своего воркера)
-        /*
-        fetch('URL_ТВОЕГО_CLOUDFLARE_WORKER', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                initData: tg.initData, // для проверки подлинности
-                order: orderData
-            })
-        }).then(() => {
-            tg.close(); // Закрываем апп после успешной отправки
-        });
-        */
-    } else {
-        alert("Оформление заказа:\n" + JSON.stringify(orderData, null, 2));
-    }
-}
-
 // Привязываем клик к HTML-кнопке в корзине
 document.getElementById('checkout-btn').addEventListener('click', processCheckout);
 
-// ВОТ ЭТА СТРОКА БЫЛА УПУЩЕНА: Привязываем клик к нативной синей кнопке Telegram
+// Привязываем клик к нативной синей кнопке Telegram
 if (tg && tg.MainButton) {
     tg.MainButton.onClick(processCheckout);
 }
