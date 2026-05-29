@@ -277,16 +277,52 @@ document.getElementById('product-modal').addEventListener('click', (e) => {
 });
 
 // --- Checkout ---
-document.getElementById('checkout-btn').addEventListener('click', () => {
+function processCheckout() {
     if (cart.length === 0) return;
+
     const orderData = {
-        action: 'checkout', lang: currentLang,
+        action: 'checkout',
+        lang: currentLang,
         total: cart.reduce((sum, i) => sum + (i.price * i.qty), 0).toFixed(2),
         items: cart.map(i => ({ id: i.id, name: i.name.en, qty: i.qty, price: i.price }))
     };
-    if (tg && tg.sendData) tg.sendData(JSON.stringify(orderData));
-    else alert("Order Data:\n" + JSON.stringify(orderData, null, 2));
-});
+
+    if (tg) {
+        // Если открыто как Reply Keyboard, это сработает и закроет Web App
+        if (tg.sendData) {
+            try {
+                tg.sendData(JSON.stringify(orderData));
+            } catch (error) {
+                console.error("sendData не сработал. Возможно, открыто через Inline-кнопку", error);
+            }
+        }
+
+        // ВАЖНО: Если ты используешь Cloudflare Workers, идеальный способ для Inline-кнопок
+        // это отправка данных прямым POST-запросом (раскомментируй и вставь URL своего воркера)
+        /*
+        fetch('URL_ТВОЕГО_CLOUDFLARE_WORKER', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                initData: tg.initData, // для проверки подлинности
+                order: orderData
+            })
+        }).then(() => {
+            tg.close(); // Закрываем апп после успешной отправки
+        });
+        */
+    } else {
+        alert("Оформление заказа:\n" + JSON.stringify(orderData, null, 2));
+    }
+}
+
+// Привязываем клик к HTML-кнопке в корзине
+document.getElementById('checkout-btn').addEventListener('click', processCheckout);
+
+// ВОТ ЭТА СТРОКА БЫЛА УПУЩЕНА: Привязываем клик к нативной синей кнопке Telegram
+if (tg && tg.MainButton) {
+    tg.MainButton.onClick(processCheckout);
+}
 
 // --- Инициализация ---
 document.addEventListener('DOMContentLoaded', () => {
