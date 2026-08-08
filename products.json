@@ -30,32 +30,245 @@
         }
     },
     {
-        "id": "p2",
-        "badge": { "uz": "Yangi", "ru": "Новинка" },
+        "id": "p3",
+        "badge": { "uz": "Top", "ru": "Топ" },
         "badgeType": "gold",
         "images": [
-            "https://gano.uz/wp-content/uploads/2023/03/excellium-gold.png"
+            "https://gano.uz/wp-content/uploads/2023/03/ispring-dental-gel.png"
         ],
-        "name": { "uz": "Excellium Gold", "ru": "Excellium Gold" },
+        "name": { "uz": "iSpring Dental Gel", "ru": "iSpring Dental Gel" },
         "brand": "Gano Excel",
-        "price": 185000,
-        "volume": { "uz": "XXX kapsula", "ru": "XXX капсул" },
-        "tags": { "uz": ["miya", "asab", "intellekt"], "ru": ["мозг", "нервы", "интеллект"] },
+        "price": 0,
+        "volume": { "uz": "1 dona", "ru": "1 шт" },
+        "tags": { "uz": ["shaxsiy gigiyena", "tish pastasi"], "ru": ["личная гигиена", "зубная паста"] },
         "about": {
-            "uz": "ABOUT.",
-            "ru": "ABOUT."
+            "uz": "iSpring Dental Gel — Ganoderma Lucidum va tabiiy ingredientlar bilan boyitilgan, tish, milk va og'iz bo'shlig'ini muloyim tozalashga yordam beradigan kundalik tish parvarishi vositasi. iSpring Dental Gel — yalpiz va boshqa tabiiy ingredientlar hamda Ganoderma Lucidum ekstrakti bilan boyitilgan tish parvarishi vositasi. U tishlar, og'iz bo'shlig'i va milklarni muloyim tozalash va kundalik parvarish qilish uchun mo'ljallangan.",
+            "ru": "iSpring Dental Gel — средство для ежедневного ухода за зубами, обогащенное Ganoderma Lucidum и натуральными ингредиентами, которое помогает бережно очищать зубы, десны и полость рта. iSpring Dental Gel — средство для ухода за зубами, обогащенное мятой, другими натуральными ингредиентами и экстрактом Ganoderma Lucidum. Оно предназначено для бережного очищения и ежедневного ухода за зубами, полостью рта и деснами."
         },
         "benefits": {
-            "uz": ["Foyda 1"],
-            "ru": ["Польза 1"]
+            "uz": [
+                "Milklar salomatligini qo'llab-quvvatlaydi",
+                "Tishlarni kundalik himoya qilishga yordam beradi",
+                "Tishlarda qoplama va toshlar hosil bo'lishining oldini olishga ko'maklashadi",
+                "Og'iz bo'shlig'i gigiyenasini saqlashga yordam beradi",
+                "Nafasning yangiligini ta'minlaydi",
+                "Teridagi kichik noqulayliklarda qo'llash mumkin"
+            ],
+            "ru": [
+                "Поддерживает здоровье десен",
+                "Помогает в ежедневной защите зубов",
+                "Способствует предотвращению образования зубного налета и камня",
+                "Помогает поддерживать гигиену полости рта",
+                "Обеспечивает свежесть дыхания",
+                "Можно использовать при небольших раздражениях кожи"
+            ]
         },
         "composition": {
-            "uz": ["Tarkib 1"],
-            "ru": ["Состав 1"]
+            "uz": ["Ganoderma Lucidum", "Yalpiz", "Tabiiy ingredientlar"],
+            "ru": ["Ganoderma Lucidum", "Мята", "Натуральные ингредиенты"]
         },
         "usage": {
-            "uz": "Qo'llanilishi.",
-            "ru": "Применение."
+            "uz": "Kundalik tish yuvish uchun.",
+            "ru": "Для ежедневной чистки зубов."
+        }
+    },
+    {
+        "id": "p4",
+        "badge": { "uz": "Yangi", "ru": "Новинка" },
+        "badgeType": "",
+        "images": [
+            "https://gano.uz/wp-content/uploads/2023/03/gano-koppe-3in1.png"
+        ],
+        "name": { "uz": "Gano Koppe 3in1", "ru": "Gano Koppe 3in1" },
+        "brand": "Gano Excel",
+        "price": 0,
+        "volume": { "uz": "Qadoq", "ru": "Упаковка" },
+        "tags": { "uz": ["kofe", "quvvat", "hazm"], "ru": ["кофе", "энергия", "пищеварение"] },
+        "about": {
+            "uz": "Gano Koppe 3in1 — hazm jarayonini qo'llab-quvvatlash, organizmga energiya berish va tabiiy tozalanish jarayonlariga yordam beruvchi tetiklantiruvchi, oqsilga boy ichimlik. Gano Koppe 3in1 — har tongda sevimli ta'mdan bahramand bo'ling va yengil hamda tetik kunni qarshi oling!",
+            "ru": "Gano Koppe 3in1 — бодрящий, богатый белком напиток, который поддерживает процесс пищеварения, заряжает организм энергией и способствует процессам естественного очищения. Gano Koppe 3in1 — наслаждайтесь любимым вкусом каждое утро и встречайте легкий и бодрый день!"
+        },
+        "benefits": {
+            "uz": [
+                "Oshqozon-ichak faoliyatini yaxshilaydi, qabziyatda samarali",
+                "O'simlik oqsiliga boy, quvvat beradi",
+                "Moddalar almashinuvini yaxshilaydi",
+                "Immunitetni mustahkamlaydi"
+            ],
+            "ru": [
+                "Улучшает работу желудочно-кишечного тракта, эффективен при запорах",
+                "Богат растительным белком, придает энергию",
+                "Улучшает обмен веществ",
+                "Укрепляет иммунитет"
+            ]
+        },
+        "composition": {
+            "uz": ["O'simlik oqsili", "Qahva", "Ganoderma ekstrakti"],
+            "ru": ["Растительный белок", "Кофе", "Экстракт Ганодермы"]
+        },
+        "usage": {
+            "uz": "Issiq suv bilan aralashtirib ichiladi.",
+            "ru": "Употреблять, смешав с горячей водой."
+        }
+    },
+    {
+        "id": "p5",
+        "badge": { "uz": "Foydali", "ru": "Полезно" },
+        "badgeType": "",
+        "images": [
+            "https://gano.uz/wp-content/uploads/2023/03/icleanse-body-bar.png"
+        ],
+        "name": { "uz": "iCleanse Body Bar", "ru": "iCleanse Body Bar" },
+        "brand": "Gano Excel",
+        "price": 0,
+        "volume": { "uz": "1 dona", "ru": "1 шт" },
+        "tags": { "uz": ["sovun", "teri parvarishi", "gigiyena"], "ru": ["мыло", "уход за кожей", "гигиена"] },
+        "about": {
+            "uz": "iCleanse Body Bar — Ganoderma Lucidum, E vitamini va echki suti asosida tayyorlangan, tana terisini muloyim tozalash va tabiiy namligini saqlashga yordam beruvchi sovun. Tana terisi uchun chuqur parvarish va tabiiy tozalik! U Ganoderma Lucidum ekstrakti, E vitamini va echki sutining maxsus kombinatsiyasi asosida yaratilgan. Ushbu yumshoq sovun terini ehtiyotkorlik bilan tozalaydi, ortiqcha yog' va kundalik ifloslanishlarni ketkazishga yordam beradi.",
+            "ru": "iCleanse Body Bar — мыло, созданное на основе Ganoderma Lucidum, витамина Е и козьего молока, помогающее бережно очищать кожу тела и сохранять ее естественную влажность. Глубокий уход и естественная чистота для кожи тела! Оно создано на основе особой комбинации экстракта Ganoderma Lucidum, витамина Е и козьего молока. Это мягкое мыло бережно очищает кожу, помогая удалить излишки жира и ежедневные загрязнения."
+        },
+        "benefits": {
+            "uz": [
+                "Terini namlantirish va oziqlantirishga yordam beradi",
+                "Tana terisini chuqur tozalashga ko'maklashadi",
+                "Terining yumshoqligi va elastikligini saqlashga yordam beradi",
+                "Muammoli teri parvarishida qo'llash mumkin",
+                "Tananing tabiiy yangiligi va tozaligini saqlashga ko'maklashadi"
+            ],
+            "ru": [
+                "Помогает увлажнять и питать кожу",
+                "Способствует глубокому очищению кожи тела",
+                "Помогает сохранить мягкость и эластичность кожи",
+                "Можно использовать при уходе за проблемной кожей",
+                "Способствует сохранению естественной свежести и чистоты тела"
+            ]
+        },
+        "composition": {
+            "uz": ["Ganoderma Lucidum", "E vitamini", "Echki suti"],
+            "ru": ["Ganoderma Lucidum", "Витамин Е", "Козье молоко"]
+        },
+        "usage": {
+            "uz": "Cho'milish va tana parvarishi uchun.",
+            "ru": "Для купания и ухода за телом."
+        }
+    },
+    {
+        "id": "p6",
+        "badge": { "uz": "Go'zallik", "ru": "Красота" },
+        "badgeType": "gold",
+        "images": [
+            "https://gano.uz/wp-content/uploads/2023/03/white-facial-bar.png"
+        ],
+        "name": { "uz": "iWhite Facial Bar", "ru": "iWhite Facial Bar" },
+        "brand": "Gano Excel",
+        "price": 0,
+        "volume": { "uz": "1 dona", "ru": "1 шт" },
+        "tags": { "uz": ["yuz parvarishi", "sovun", "kosmetika"], "ru": ["уход за лицом", "мыло", "косметика"] },
+        "about": {
+            "uz": "iWhite Facial Bar — Ganoderma ekstrakti va zamonaviy kosmetik texnologiyalar asosida tayyorlangan, yuz terisiga sog'lom ko'rinish va tabiiy yorqinlik berishga yordam beruvchi parvarish vositasi. Yuzingiz uchun tabiiy go'zallik formulasi!",
+            "ru": "iWhite Facial Bar — средство по уходу, созданное на основе экстракта Ganoderma и современных косметических технологий, помогающее придать коже лица здоровый вид и естественное сияние. Формула естественной красоты для вашего лица!"
+        },
+        "benefits": {
+            "uz": [
+                "Yuz terisini chuqur tozalashga yordam beradi",
+                "Terining tabiiy yorqinligi, namligi va silliqligini qo'llab-quvvatlaydi",
+                "Terining yumshoq va parvarishlangan ko'rinishini saqlashga ko'maklashadi",
+                "Terini o'lik hujayralardan tozalashga yordam beradi",
+                "Barcha turdagi teri, jumladan sezgir teri uchun ham mos"
+            ],
+            "ru": [
+                "Помогает глубоко очистить кожу лица",
+                "Поддерживает естественное сияние, увлажненность и гладкость кожи",
+                "Способствует сохранению мягкого и ухоженного вида кожи",
+                "Помогает очистить кожу от омертвевших клеток",
+                "Подходит для всех типов кожи, включая чувствительную"
+            ]
+        },
+        "composition": {
+            "uz": ["Ganoderma ekstrakti"],
+            "ru": ["Экстракт Ганодермы"]
+        },
+        "usage": {
+            "uz": "Yuzni yuvish uchun kundalik foydalaniladi.",
+            "ru": "Используется ежедневно для умывания лица."
+        }
+    },
+    {
+        "id": "p7",
+        "badge": { "uz": "Detoks", "ru": "Детокс" },
+        "badgeType": "",
+        "images": [
+            "https://gano.uz/wp-content/uploads/2023/03/red-gano-tea.png"
+        ],
+        "name": { "uz": "i Red Gano Tea", "ru": "i Red Gano Tea" },
+        "brand": "Gano Excel",
+        "price": 0,
+        "volume": { "uz": "Qadoq", "ru": "Упаковка" },
+        "tags": { "uz": ["choy", "detoks", "tinchlantiruvchi"], "ru": ["чай", "детокс", "успокаивающее"] },
+        "about": {
+            "uz": "i Red Gano Tea — har bir qultumda oshqozoningiz uchun shinamlik, yengil hazm va tabiiy farovonlik! Organizmni tabiiy tozalash, qorindagi noqulaylikni kamaytirish va oshqozon muvozanatini qo'llab-quvvatlashga yordam beruvchi qizil gano choyi.",
+            "ru": "i Red Gano Tea — уют для вашего желудка, легкое пищеварение и естественное благополучие в каждом глотке! Красный чай гано, который помогает естественному очищению организма, уменьшению дискомфорта в животе и поддержанию баланса желудка."
+        },
+        "benefits": {
+            "uz": [
+                "Asabni tinchlantiradi, uyquni yaxshilaydi",
+                "Oshqozon-ichakdagi diskomfortni bartaraf qiladi",
+                "O't qopi, peshob yo'llarini tuz va chiqindilardan xalos qiladi",
+                "Qon quyuqlashishi oldini oladi"
+            ],
+            "ru": [
+                "Успокаивает нервы, улучшает сон",
+                "Устраняет дискомфорт в желудочно-кишечном тракте",
+                "Очищает желчный пузырь и мочевыводящие пути от солей и шлаков",
+                "Предотвращает сгущение крови"
+            ]
+        },
+        "composition": {
+            "uz": ["Qizil choy", "Ganoderma ekstrakti"],
+            "ru": ["Красный чай", "Экстракт Ганодермы"]
+        },
+        "usage": {
+            "uz": "Issiq suvda damlab ichiladi.",
+            "ru": "Заваривать в горячей воде."
+        }
+    },
+    {
+        "id": "p8",
+        "badge": { "uz": "Yangi", "ru": "Новинка" },
+        "badgeType": "",
+        "images": [
+            "https://gano.uz/wp-content/uploads/2023/03/ng-cool-tea-latte.png"
+        ],
+        "name": { "uz": "NG COOL Tea Latte", "ru": "NG COOL Tea Latte" },
+        "brand": "Gano Excel",
+        "price": 0,
+        "volume": { "uz": "Qadoq", "ru": "Упаковка" },
+        "tags": { "uz": ["choy", "latte", "detoks"], "ru": ["чай", "латте", "детокс"] },
+        "about": {
+            "uz": "NG COOL Tea Latte — ichak mikroflorasi, hazm jarayoni va ichki a'zolar faoliyatini qo'llab-quvvatlashga yordam beradigan, yengillik va muvozanat uchun mos ichimlik. Yengillik, muvozanat va sog'lom hazm uchun ajoyib tanlov!",
+            "ru": "NG COOL Tea Latte — напиток, подходящий для легкости и баланса, помогающий поддерживать микрофлору кишечника, процесс пищеварения и работу внутренних органов. Отличный выбор для легкости, баланса и здорового пищеварения!"
+        },
+        "benefits": {
+            "uz": [
+                "O'pka, bronxlar, jigar va buyrakni toksinlardan tozalaydi",
+                "Shamollashda tez tiklanishni ta'minlaydi",
+                "Tanada shishlarni oldini oladi, ortiqcha suyuqlikni chiqaradi",
+                "Ichaklar yallig'lanishi oldini oladi"
+            ],
+            "ru": [
+                "Очищает легкие, бронхи, печень и почки от токсинов",
+                "Обеспечивает быстрое восстановление при простуде",
+                "Предотвращает отеки в теле, выводит лишнюю жидкость",
+                "Предотвращает воспаление кишечника"
+            ]
+        },
+        "composition": {
+            "uz": ["Choy", "Latte qo'shimchalari", "Ganoderma"],
+            "ru": ["Чай", "Добавки латте", "Ганодерма"]
+        },
+        "usage": {
+            "uz": "Issiq suv bilan aralashtirib tayyorlanadi.",
+            "ru": "Готовится путем смешивания с горячей водой."
         }
     }
 ]
