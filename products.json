@@ -1,0 +1,61 @@
+[
+    {
+        "id": "p1",
+        "badge": { "uz": "Bestseller", "ru": "Хит" },
+        "badgeType": "",
+        "images": [
+            "https://gano.uz/wp-content/uploads/2023/03/reishi-gold-big.png",
+            "https://avatars.mds.yandex.net/get-mpic/11402506/2a0000019944a07a6a5d9e22b9094bffd543/orig"
+        ],
+        "name": { "uz": "Reishi Gold", "ru": "Reishi Gold" },
+        "brand": "Gano Excel",
+        "price": 1215000,
+        "volume": { "uz": "100 kapsula", "ru": "100 капсул" },
+        "tags": { "uz": ["immunitet", "quvvat", "detoks"], "ru": ["иммунитет", "энергия", "детокс"] },
+        "about": {
+            "uz": "Reishi Gold - Inson tanasidagi ichki va tashqi muvozanatni boshqaruvchi yagona giyoh - Tabiat tuhfasidir.<br>Xozirgi zamon Ilm – Fan olimlarining - Amerika farmakopiyasi Reishi Ganoderma<br>Lucidum to'g'risidagi nashrida ham o'z tasdig'ini topgan.",
+            "ru": "Reishi Gold — иммунологический продукт на основе органического экстракта Ganoderma Lucidum. 1 капсула содержит экстракт из 240 грибов Ganoderma Lucidum, выращенных и вызревших за 12 недель (полное созревание за 3 месяца)."
+        },
+        "benefits": {
+            "uz": ["Immun tizimini quvvatlaydi", "Organizmni toksinlardan tozalaydi", "Yurak qon – tomir tizimini quvvatlaydi", "Qonda qand miqdorini pasaytiradi", "Asab tizimini tinchlantiradi, ruhiy holatni yaxshilaydi", "Jigar tozalaydi", "Nafas olish tizmini yaxshilaydi", "O'smaga qarshi"],
+            "ru": ["Укрепляет иммунитет", "Очищает организм", "Повышает энергию", "Нормализует давление", "Уменьшает воспаления", "Улучшает сон"]
+        },
+        "composition": {
+            "uz": ["Polisaxaridlar", "Organik Germaniy", "Adenozin", "Ganoderma ekstrakti", "Triterpenoidlar", "Oqsillar", "Aminokislotalar"],
+            "ru": ["Полисахариды", "Органический германий", "Витамины", "Минералы", "Ферменты", "Белки"]
+        },
+        "usage": {
+            "uz": "Profilaktika maqsadida kuniga 1 kapsuladan ichish tavsiya etiladi. Kasallik paytida kuniga 2-4 kapsuladan. Eng yaxshi natijaga EXCELLIUM GOLD bilan birgalikda erishish mumkin.",
+            "ru": "1–2 капсулы 2 раза в день. Для более эффективного результата рекомендуется до 6 капсул. Рекомендуется принимать совместно с Excellium Gold."
+        }
+    },
+    {
+        "id": "p2",
+        "badge": { "uz": "Yangi", "ru": "Новинка" },
+        "badgeType": "gold",
+        "images": [
+            "https://gano.uz/wp-content/uploads/2023/03/excellium-gold.png"
+        ],
+        "name": { "uz": "Excellium Gold", "ru": "Excellium Gold" },
+        "brand": "Gano Excel",
+        "price": 185000,
+        "volume": { "uz": "XXX kapsula", "ru": "XXX капсул" },
+        "tags": { "uz": ["miya", "asab", "intellekt"], "ru": ["мозг", "нервы", "интеллект"] },
+        "about": {
+            "uz": "ABOUT.",
+            "ru": "ABOUT."
+        },
+        "benefits": {
+            "uz": ["Foyda 1"],
+            "ru": ["Польза 1"]
+        },
+        "composition": {
+            "uz": ["Tarkib 1"],
+            "ru": ["Состав 1"]
+        },
+        "usage": {
+            "uz": "Qo'llanilishi.",
+            "ru": "Применение."
+        }
+    }
+]
