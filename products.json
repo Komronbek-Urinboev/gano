@@ -1,40 +1,10 @@
 [
-    {
-        "id": "p1",
-        "badge": { "uz": "Bestseller", "ru": "Хит" },
-        "badgeType": "",
-        "images": [
-            "https://gano.uz/wp-content/uploads/2023/03/reishi-gold-big.png",
-            "https://avatars.mds.yandex.net/get-mpic/11402506/2a0000019944a07a6a5d9e22b9094bffd543/orig"
-        ],
-        "name": { "uz": "Reishi Gold", "ru": "Reishi Gold" },
-        "brand": "Gano Excel",
-        "price": 1215000,
-        "volume": { "uz": "100 kapsula", "ru": "100 капсул" },
-        "tags": { "uz": ["immunitet", "quvvat", "detoks"], "ru": ["иммунитет", "энергия", "детокс"] },
-        "about": {
-            "uz": "Reishi Gold - Inson tanasidagi ichki va tashqi muvozanatni boshqaruvchi yagona giyoh - Tabiat tuhfasidir.<br>Xozirgi zamon Ilm – Fan olimlarining - Amerika farmakopiyasi Reishi Ganoderma<br>Lucidum to'g'risidagi nashrida ham o'z tasdig'ini topgan.",
-            "ru": "Reishi Gold — иммунологический продукт на основе органического экстракта Ganoderma Lucidum. 1 капсула содержит экстракт из 240 грибов Ganoderma Lucidum, выращенных и вызревших за 12 недель (полное созревание за 3 месяца)."
-        },
-        "benefits": {
-            "uz": ["Immun tizimini quvvatlaydi", "Organizmni toksinlardan tozalaydi", "Yurak qon – tomir tizimini quvvatlaydi", "Qonda qand miqdorini pasaytiradi", "Asab tizimini tinchlantiradi, ruhiy holatni yaxshilaydi", "Jigar tozalaydi", "Nafas olish tizmini yaxshilaydi", "O'smaga qarshi"],
-            "ru": ["Укрепляет иммунитет", "Очищает организм", "Повышает энергию", "Нормализует давление", "Уменьшает воспаления", "Улучшает сон"]
-        },
-        "composition": {
-            "uz": ["Polisaxaridlar", "Organik Germaniy", "Adenozin", "Ganoderma ekstrakti", "Triterpenoidlar", "Oqsillar", "Aminokislotalar"],
-            "ru": ["Полисахариды", "Органический германий", "Витамины", "Минералы", "Ферменты", "Белки"]
-        },
-        "usage": {
-            "uz": "Profilaktika maqsadida kuniga 1 kapsuladan ichish tavsiya etiladi. Kasallik paytida kuniga 2-4 kapsuladan. Eng yaxshi natijaga EXCELLIUM GOLD bilan birgalikda erishish mumkin.",
-            "ru": "1–2 капсулы 2 раза в день. Для более эффективного результата рекомендуется до 6 капсул. Рекомендуется принимать совместно с Excellium Gold."
-        }
-    },
-    {
+        {
         "id": "p3",
         "badge": { "uz": "Top", "ru": "Топ" },
         "badgeType": "gold",
         "images": [
-            "https://gano.uz/wp-content/uploads/2023/03/ispring-dental-gel.png"
+            "images/i_spring.jpg"
         ],
         "name": { "uz": "iSpring Dental Gel", "ru": "iSpring Dental Gel" },
         "brand": "Gano Excel",
@@ -77,7 +47,8 @@
         "badge": { "uz": "Yangi", "ru": "Новинка" },
         "badgeType": "",
         "images": [
-            "https://gano.uz/wp-content/uploads/2023/03/gano-koppe-3in1.png"
+            "images/ganokoppe.jpg",
+            "images/gano_koppe2.jpg"
         ],
         "name": { "uz": "Gano Koppe 3in1", "ru": "Gano Koppe 3in1" },
         "brand": "Gano Excel",
@@ -116,7 +87,8 @@
         "badge": { "uz": "Foydali", "ru": "Полезно" },
         "badgeType": "",
         "images": [
-            "https://gano.uz/wp-content/uploads/2023/03/icleanse-body-bar.png"
+            "images/icleansebody.jpg",
+            "images/icleanseb.jpg"
         ],
         "name": { "uz": "iCleanse Body Bar", "ru": "iCleanse Body Bar" },
         "brand": "Gano Excel",
@@ -157,7 +129,8 @@
         "badge": { "uz": "Go'zallik", "ru": "Красота" },
         "badgeType": "gold",
         "images": [
-            "https://gano.uz/wp-content/uploads/2023/03/white-facial-bar.png"
+            "images/whitefacial.jpg",
+            "images/iwhitefacial2.jpg"
         ],
         "name": { "uz": "iWhite Facial Bar", "ru": "iWhite Facial Bar" },
         "brand": "Gano Excel",
@@ -198,7 +171,8 @@
         "badge": { "uz": "Detoks", "ru": "Детокс" },
         "badgeType": "",
         "images": [
-            "https://gano.uz/wp-content/uploads/2023/03/red-gano-tea.png"
+            "images/i_red_gano_tea.jpg",
+            "images/i_red_gano_tea_2.jpg"
         ],
         "name": { "uz": "i Red Gano Tea", "ru": "i Red Gano Tea" },
         "brand": "Gano Excel",
@@ -237,7 +211,8 @@
         "badge": { "uz": "Yangi", "ru": "Новинка" },
         "badgeType": "",
         "images": [
-            "https://gano.uz/wp-content/uploads/2023/03/ng-cool-tea-latte.png"
+            "images/ng_cool_tea.jpg",
+            "images/ng_cool_2.jpg"
         ],
         "name": { "uz": "NG COOL Tea Latte", "ru": "NG COOL Tea Latte" },
         "brand": "Gano Excel",
