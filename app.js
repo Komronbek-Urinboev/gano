@@ -7,7 +7,7 @@ let lang = localStorage.getItem('lang') || 'uz';
 let theme = (tg?.colorScheme) || localStorage.getItem('theme') || 'light';
 let cart = [];
 let currentProduct = null;
-let products = []; // Теперь пустой массив, заполняется асинхронно
+let products = [];
 
 /* ── i18n ── */
 const T = {
@@ -71,7 +71,6 @@ function setLang(l) {
     document.getElementById('lang-dropdown').classList.add('hidden');
     applyI18n();
 
-    // Перезапуск рендера с текущим языком
     const q = document.getElementById('search-input').value.trim();
     if(q.length > 1) {
         document.getElementById('search-input').dispatchEvent(new Event('input'));
@@ -100,13 +99,13 @@ document.getElementById('lang-btn').onclick = e => {
 };
 document.addEventListener('click', () => document.getElementById('lang-dropdown').classList.add('hidden'));
 
-/* ── Smart Search (Debounce Optimized) ── */
+/* ── Smart Search ── */
 function tokenize(str) { return str.toLowerCase().replace(/'/g, '\'').split(/\s+/); }
 function scoreProduct(p, q) {
     if (!q) return 1;
-    const name = p.name[lang].toLowerCase();
-    const tags = (p.tags[lang] || []).join(' ');
-    const about = (p.about[lang] || '').toLowerCase();
+    const name = (p.name[lang] || '').toLowerCase();
+    const tags = ((p.tags && p.tags[lang]) || []).join(' ');
+    const about = ((p.about && p.about[lang]) || '').toLowerCase();
     const tokens = tokenize(q);
     let score = 0;
     for (const tok of tokens) {
@@ -122,7 +121,6 @@ document.getElementById('search-input').addEventListener('input', function() {
     clearTimeout(searchTimeout);
     const q = this.value.trim();
 
-    // Оптимизация: таймаут увеличен до 300мс для мобильных
     searchTimeout = setTimeout(() => {
         if (q.length > 1) {
             const matches = products
@@ -158,10 +156,10 @@ document.addEventListener('click', e => {
         document.getElementById('suggestions').classList.add('hidden');
 });
 
-/* ── DOM Optimization: Fragment & Lazy Render ── */
+/* ── Render Products ── */
 function renderProducts(items) {
     const grid = document.getElementById('products-grid');
-    grid.innerHTML = ''; // Очистка старых данных
+    grid.innerHTML = '';
 
     if (!items.length) {
         grid.innerHTML = `<div class="empty-state"><div class="emoji">🌿</div><p>${T[lang].noProducts}</p></div>`;
@@ -169,7 +167,7 @@ function renderProducts(items) {
     }
 
     const fragment = document.createDocumentFragment();
-    const chunkSize = 20; // Рисуем по 20 товаров за раз
+    const chunkSize = 20;
     let renderCount = Math.min(items.length, chunkSize);
 
     function createCard(p) {
@@ -195,13 +193,11 @@ function renderProducts(items) {
         return div;
     }
 
-    // Рендер первой пачки
     for (let i = 0; i < renderCount; i++) {
         fragment.appendChild(createCard(items[i]));
     }
     grid.appendChild(fragment);
 
-    // Ленивая подгрузка остальных через IntersectionObserver
     if (items.length > chunkSize) {
         const trigger = document.createElement('div');
         trigger.className = 'lazy-load-trigger';
@@ -332,6 +328,27 @@ window.openModal = function(id) {
     ).join('');
 
     const t = T[lang];
+    let compositionHTML = '';
+    let usageHTML = '';
+
+    if (p.composition && p.composition[lang]) {
+        compositionHTML = `
+            <div class="desc-section">
+                <div class="desc-section-title">${t.compTitle}</div>
+                <div class="composition-list">
+                    ${p.composition[lang].map(c => `<span class="comp-tag">${c}</span>`).join('')}
+                </div>
+            </div>`;
+    }
+
+    if (p.usage && p.usage[lang]) {
+        usageHTML = `
+            <div class="desc-section">
+                <div class="desc-section-title">${t.usageTitle}</div>
+                <div class="usage-box">${p.usage[lang]}</div>
+            </div>`;
+    }
+
     document.getElementById('detail-body').innerHTML = `
         <div class="detail-brand">${p.brand}</div>
         <div class="detail-title">${p.name[lang]}</div>
@@ -358,17 +375,8 @@ window.openModal = function(id) {
             </div>
         </div>
 
-        <div class="desc-section">
-            <div class="desc-section-title">${t.compTitle}</div>
-            <div class="composition-list">
-                ${p.composition[lang].map(c => `<span class="comp-tag">${c}</span>`).join('')}
-            </div>
-        </div>
-
-        <div class="desc-section">
-            <div class="desc-section-title">${t.usageTitle}</div>
-            <div class="usage-box">${p.usage[lang]}</div>
-        </div>
+        ${compositionHTML}
+        ${usageHTML}
     `;
 
     document.getElementById('modal-overlay').classList.add('active');
@@ -388,13 +396,45 @@ document.getElementById('modal-overlay').onclick = closeModal;
 window.openViewer = function(src) {
     const v = document.getElementById('viewer');
     const img = document.getElementById('viewer-img');
-    img.src = src; img.classList.remove('zoomed');
+    img.src = src;
+    img.classList.remove('zoomed');
     v.classList.add('active');
+    document.body.style.overflow = 'hidden';
 };
-function closeViewer() { document.getElementById('viewer').classList.remove('active'); }
-document.getElementById('viewer-close').onclick = closeViewer;
-document.getElementById('viewer').onclick = e => { if (e.target === e.currentTarget) closeViewer(); };
-document.getElementById('viewer-img').onclick = function(e) { e.stopPropagation(); this.classList.toggle('zoomed'); };
+
+window.closeViewer = function() {
+    const v = document.getElementById('viewer');
+    v.classList.remove('active');
+    document.body.style.overflow = '';
+    setTimeout(() => {
+        document.getElementById('viewer-img').src = '';
+    }, 300);
+};
+
+// Используем addEventListener с stopPropagation
+document.getElementById('viewer-close').addEventListener('click', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    closeViewer();
+});
+
+document.getElementById('viewer').addEventListener('click', function(e) {
+    if (e.target === this) {
+        closeViewer();
+    }
+});
+
+document.getElementById('viewer-img').addEventListener('click', function(e) {
+    e.stopPropagation();
+    this.classList.toggle('zoomed');
+});
+
+// Закрытие по Escape
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeViewer();
+    }
+});
 
 /* ── Cart drawer ── */
 function openCartDrawer() {
@@ -409,11 +449,10 @@ document.getElementById('cart-btn').onclick = openCartDrawer;
 document.getElementById('close-cart').onclick = closeCartDrawer;
 document.getElementById('cart-overlay').onclick = closeCartDrawer;
 
-/* ── Checkout (Security Optimized) ── */
+/* ── Checkout ── */
 async function processCheckout() {
     if (!cart.length) { tg?.HapticFeedback?.notificationOccurred('error'); return; }
 
-    // БЕЗОПАСНОСТЬ: Отправляем только ID и количество. Бот сам достанет цены из БД.
     const orderData = {
         action: 'checkout',
         lang: lang,
@@ -421,16 +460,14 @@ async function processCheckout() {
     };
 
     if (tg) {
-        // Если доступен initData (Открыто через Inline/Menu кнопку) — используем безопасный Fetch
         if (tg.initData) {
             tg.MainButton.showProgress();
             try {
-                // Замени URL на свой реальный сервер или webhook
                 const response = await fetch('https://tvoi-server.com/api/checkout', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
-                        'Authorization': `tma ${tg.initData}` // Передаем подпись для валидации
+                        'Authorization': `tma ${tg.initData}`
                     },
                     body: JSON.stringify(orderData)
                 });
@@ -448,7 +485,6 @@ async function processCheckout() {
                 tg.MainButton.hideProgress();
             }
         } else {
-            // Fallback для Reply Keyboard Button (там нет initData, данные идут сразу в бота)
             tg.sendData(JSON.stringify(orderData));
             tg.close();
         }
@@ -480,5 +516,4 @@ async function initApp() {
     }
 }
 
-// Старт приложения
 initApp();

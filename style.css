@@ -334,10 +334,13 @@ html.dark .btn-add:active{opacity:.85}
 .viewer-close{
     position:absolute;top:20px;right:20px;
     background:rgba(255,255,255,.12);border:none;color:#fff;
-    width:40px;height:40px;border-radius:50%;font-size:22px;
-    display:flex;align-items:center;justify-content:center
+    width:44px;height:44px;border-radius:50%;font-size:24px;
+    display:flex;align-items:center;justify-content:center;
+    z-index:10000;
+    cursor:pointer;
+    -webkit-tap-highlight-color:transparent;
+    pointer-events:auto;
 }
-
 /* ── Cart ── */
 .cart-sheet{
     position:fixed;bottom:0;left:0;right:0;
