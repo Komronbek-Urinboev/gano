@@ -7,9 +7,9 @@
         },
         "badgeType": "43r34r34",
         "images": [
-            "/uploads/f098b3ce88ed448fad635cd488941baf.jpeg",
-            "/uploads/bf62bbc548c847529c2e38a825948083.png",
-            "/uploads/47f18b1ec2bf45fc96c75119823eba02.jpeg"
+            "uploads/f098b3ce88ed448fad635cd488941baf.jpeg",
+            "uploads/bf62bbc548c847529c2e38a825948083.png",
+            "uploads/47f18b1ec2bf45fc96c75119823eba02.jpeg"
         ],
         "name": {
             "uz": "iSpring Dental Gel",
@@ -22,8 +22,14 @@
             "ru": "150 г"
         },
         "tags": {
-            "uz": ["shaxsiy gigiyena", "tish pastasi"],
-            "ru": ["личная гигиена", "зубная паста"]
+            "uz": [
+                "shaxsiy gigiyena",
+                "tish pastasi"
+            ],
+            "ru": [
+                "личная гигиена",
+                "зубная паста"
+            ]
         },
         "about": {
             "uz": "iSpring Dental Gel — Табиий парвариш ва соғлом табассум учун!\n\niSpring Dental Gel — ялпиз ва бошқа табиий ингредиентлар ҳамда Ganoderma Lucidum экстракти билан бойитилган тиш парвариши воситаси.\n\nУ тишлар, оғиз бўшлиғи ва милкларни мулойим тозалаш ва кундалик парвариш қилиш учун мўлжалланган.",
@@ -56,10 +62,10 @@
         },
         "badgeType": "",
         "images": [
-            "/uploads/8514eca5e53a4bf49ba0067d90414355.jpg",
-            "/uploads/fb178cc9e77f4e9a848941b92119eaed.png",
-            "/uploads/cf4b854126e242f68699dda2dd52ad90.png",
-            "/uploads/7bcb4bf1ad7c441f9b6e59339a4bc340.png"
+            "uploads/8514eca5e53a4bf49ba0067d90414355.jpg",
+            "uploads/fb178cc9e77f4e9a848941b92119eaed.png",
+            "uploads/cf4b854126e242f68699dda2dd52ad90.png",
+            "uploads/7bcb4bf1ad7c441f9b6e59339a4bc340.png"
         ],
         "name": {
             "uz": "GANO PLUS – SIGP",
@@ -108,8 +114,8 @@
         },
         "badgeType": "",
         "images": [
-            "/uploads/34f42a52bd2847a5859e9425e6d172a5.png",
-            "/uploads/685ba06f864e435b9d150eb7d32e71fc.png"
+            "uploads/34f42a52bd2847a5859e9425e6d172a5.png",
+            "uploads/685ba06f864e435b9d150eb7d32e71fc.png"
         ],
         "name": {
             "uz": "Моchо chino",
@@ -157,9 +163,9 @@
         },
         "badgeType": "",
         "images": [
-            "/uploads/b3b672ce265041eca8ce10173f209c2a.png",
-            "/uploads/74dbdbbd334442959eec6e7fd3315427.png",
-            "/uploads/01daa46624c6484f818486014f99cd03.jpg"
+            "uploads/b3b672ce265041eca8ce10173f209c2a.png",
+            "uploads/74dbdbbd334442959eec6e7fd3315427.png",
+            "uploads/01daa46624c6484f818486014f99cd03.jpg"
         ],
         "name": {
             "uz": "i Royal",
@@ -212,12 +218,12 @@
         },
         "badgeType": "",
         "images": [
-            "/uploads/fb0c63b4629c43028c833c919293f89e.png",
-            "/uploads/e0689bc8cbb94c95a85ed560d7e8125c.png",
-            "/uploads/caceda9c85a34e56bdfbdba6603559ef.png",
-            "/uploads/3c5551deee474e6bba790783ff1ee12e.png",
-            "/uploads/216a1cdca6334f2ba6570df219c5fc4e.png",
-            "/uploads/d0cbf9df8cce4a4c815cc40a891e1be9.jpeg"
+            "uploads/fb0c63b4629c43028c833c919293f89e.png",
+            "uploads/e0689bc8cbb94c95a85ed560d7e8125c.png",
+            "uploads/caceda9c85a34e56bdfbdba6603559ef.png",
+            "uploads/3c5551deee474e6bba790783ff1ee12e.png",
+            "uploads/216a1cdca6334f2ba6570df219c5fc4e.png",
+            "uploads/d0cbf9df8cce4a4c815cc40a891e1be9.jpeg"
         ],
         "name": {
             "uz": "COOL Tea Latte",
@@ -266,8 +272,8 @@
         },
         "badgeType": "",
         "images": [
-            "/uploads/f3a16cd18b674f4b8d2f844f78a40d5a.jpg",
-            "/uploads/84c95a79890f4800aab263dcb4a3e3ba.png"
+            "uploads/f3a16cd18b674f4b8d2f844f78a40d5a.jpg",
+            "uploads/84c95a79890f4800aab263dcb4a3e3ba.png"
         ],
         "name": {
             "uz": "Gano Koppe 3in1",
@@ -318,8 +324,8 @@
         },
         "badgeType": "",
         "images": [
-            "/uploads/699c58085645465d9d7fcfa83b08d9e9.png",
-            "/uploads/7a19e9edf6534ddd9f0472abb441287f.png"
+            "uploads/699c58085645465d9d7fcfa83b08d9e9.png",
+            "uploads/7a19e9edf6534ddd9f0472abb441287f.png"
         ],
         "name": {
             "uz": "Dark Latte",
@@ -368,9 +374,9 @@
         },
         "badgeType": "",
         "images": [
-            "/uploads/a3877101da654dae9e417dc99ca2ffd3.png",
-            "/uploads/7818263885bc42ad85a11d423dc4bc10.png",
-            "/uploads/fe9b7009b02a49518f898cad39b5ecfd.jpg"
+            "uploads/a3877101da654dae9e417dc99ca2ffd3.png",
+            "uploads/7818263885bc42ad85a11d423dc4bc10.png",
+            "uploads/fe9b7009b02a49518f898cad39b5ecfd.jpg"
         ],
         "name": {
             "uz": "i Red Gano Tea",
@@ -421,10 +427,10 @@
         },
         "badgeType": "",
         "images": [
-            "/uploads/f8ab110cb95e446abfe2a73136645005.png",
-            "/uploads/af72700ac9bd453da433ea1ea6b0a7a9.png",
-            "/uploads/e92ce97f2f414c6f9b00489afb91c8c1.png",
-            "/uploads/5de5a7cddd1d4121962b28a49b88f5de.jpg"
+            "uploads/f8ab110cb95e446abfe2a73136645005.png",
+            "uploads/af72700ac9bd453da433ea1ea6b0a7a9.png",
+            "uploads/e92ce97f2f414c6f9b00489afb91c8c1.png",
+            "uploads/5de5a7cddd1d4121962b28a49b88f5de.jpg"
         ],
         "name": {
             "uz": "i Gano Plus",
@@ -471,9 +477,9 @@
         },
         "badgeType": "",
         "images": [
-            "/uploads/d2c9a1f1d88f4aca89703b7e6672d410.png",
-            "/uploads/758f8aea3c744bf88f5f8b0a997af2e6.png",
-            "/uploads/7c9bf2fdf3804350be494ac28416052c.jpg"
+            "uploads/d2c9a1f1d88f4aca89703b7e6672d410.png",
+            "uploads/758f8aea3c744bf88f5f8b0a997af2e6.png",
+            "uploads/7c9bf2fdf3804350be494ac28416052c.jpg"
         ],
         "name": {
             "uz": "i Excel Plus",
@@ -524,9 +530,9 @@
         },
         "badgeType": "",
         "images": [
-            "/uploads/2a718be7693740639dc26df24bc9e263.png",
-            "/uploads/e1a1d921c7654a0593e1dab653193cdd.png",
-            "/uploads/4f8831f288e74302b01518cfccb4d3c9.png"
+            "uploads/2a718be7693740639dc26df24bc9e263.png",
+            "uploads/e1a1d921c7654a0593e1dab653193cdd.png",
+            "uploads/4f8831f288e74302b01518cfccb4d3c9.png"
         ],
         "name": {
             "uz": "iGarsino",
@@ -575,8 +581,8 @@
         },
         "badgeType": "",
         "images": [
-            "/uploads/baf48c234d624c88a8037a6f354de739.jpg",
-            "/uploads/ae26514c9e254bda93af09feab54754f.png"
+            "uploads/baf48c234d624c88a8037a6f354de739.jpg",
+            "uploads/ae26514c9e254bda93af09feab54754f.png"
         ],
         "name": {
             "uz": "Cocoa Cino",
@@ -627,7 +633,7 @@
         },
         "badgeType": "",
         "images": [
-            "/uploads/769689ab398c4956ab4fd2037a9a0882.jpg"
+            "uploads/769689ab398c4956ab4fd2037a9a0882.jpg"
         ],
         "name": {
             "uz": "Flakes Chino",
@@ -676,10 +682,10 @@
         },
         "badgeType": "",
         "images": [
-            "/uploads/bcf6577699414745b6aaaa69e33ca16e.png",
-            "/uploads/ac20266a7484484981cb4f74174b09f3.png",
-            "/uploads/4f36ca1854134cf4b7aae318e555c249.png",
-            "/uploads/2c6a8b64a7ff4f87aef71eac1d36ffa7.jpg"
+            "uploads/bcf6577699414745b6aaaa69e33ca16e.png",
+            "uploads/ac20266a7484484981cb4f74174b09f3.png",
+            "uploads/4f36ca1854134cf4b7aae318e555c249.png",
+            "uploads/2c6a8b64a7ff4f87aef71eac1d36ffa7.jpg"
         ],
         "name": {
             "uz": "C’real (каша)",
@@ -730,9 +736,9 @@
         },
         "badgeType": "",
         "images": [
-            "/uploads/f895394a3e834f5f8f8c6763c18dfd59.png",
-            "/uploads/cee94d3d735447cfa3ba4bde0a8de979.png",
-            "/uploads/a10e838c4cc342f6a56c890effccc33f.png"
+            "uploads/f895394a3e834f5f8f8c6763c18dfd59.png",
+            "uploads/cee94d3d735447cfa3ba4bde0a8de979.png",
+            "uploads/a10e838c4cc342f6a56c890effccc33f.png"
         ],
         "name": {
             "uz": "NG Black Koppe",
@@ -781,9 +787,9 @@
         },
         "badgeType": "",
         "images": [
-            "/uploads/7762b5b4a14e43229580f8a01c0ce7da.png",
-            "/uploads/5a9bc8ceafa049e098f5b8088a4fcd08.png",
-            "/uploads/278af02e025e45eea4545b1b0b45239a.jpg"
+            "uploads/7762b5b4a14e43229580f8a01c0ce7da.png",
+            "uploads/5a9bc8ceafa049e098f5b8088a4fcd08.png",
+            "uploads/278af02e025e45eea4545b1b0b45239a.jpg"
         ],
         "name": {
             "uz": "i Supremo",
@@ -824,9 +830,9 @@
         },
         "badgeType": "",
         "images": [
-            "/uploads/8dd8bfabf1c14a63ade1e10373030533.jpg",
-            "/uploads/10c3726e0a7c4f72898ea5447e15e0ae.png",
-            "/uploads/3e10ad5166a342b9bdee636a898eda45.jpg"
+            "uploads/8dd8bfabf1c14a63ade1e10373030533.jpg",
+            "uploads/10c3726e0a7c4f72898ea5447e15e0ae.png",
+            "uploads/3e10ad5166a342b9bdee636a898eda45.jpg"
         ],
         "name": {
             "uz": "i Sakano",
@@ -883,8 +889,8 @@
         },
         "badgeType": "",
         "images": [
-            "/uploads/a5df0a1a663745c9ab6744734c1e76ef.jpg",
-            "/uploads/6473e12fcda54d03a8a855460eeebf6a.png"
+            "uploads/a5df0a1a663745c9ab6744734c1e76ef.jpg",
+            "uploads/6473e12fcda54d03a8a855460eeebf6a.png"
         ],
         "name": {
             "uz": "i Cleanse",
@@ -933,8 +939,8 @@
         },
         "badgeType": "",
         "images": [
-            "/uploads/43974ea640dd408c9a4bf8edd0e3fa95.png",
-            "/uploads/3f5ade5e09564bc38c11dd0cb073d020.png"
+            "uploads/43974ea640dd408c9a4bf8edd0e3fa95.png",
+            "uploads/3f5ade5e09564bc38c11dd0cb073d020.png"
         ],
         "name": {
             "uz": "I White",
@@ -983,9 +989,9 @@
         },
         "badgeType": "",
         "images": [
-            "/uploads/2256b7e989db41edb1457a78dcae841e.png",
-            "/uploads/d6abd79c793f48afb7481be8ca3af2fe.png",
-            "/uploads/89d802ed4ccf417a8eaa72713fc9b7e7.png"
+            "uploads/2256b7e989db41edb1457a78dcae841e.png",
+            "uploads/d6abd79c793f48afb7481be8ca3af2fe.png",
+            "uploads/89d802ed4ccf417a8eaa72713fc9b7e7.png"
         ],
         "name": {
             "uz": "Reskine Коллаген",
@@ -1024,10 +1030,10 @@
         },
         "badgeType": "",
         "images": [
-            "/uploads/5f6717655bf04c6ab1a96d778f9d019c.png",
-            "/uploads/10dc4ca165174079983c9d6a7447c14b.png",
-            "/uploads/93631204867942539d8f67e7c8351959.png",
-            "/uploads/80370eef7cda49298ecfbb47a61d3f54.jpg"
+            "uploads/5f6717655bf04c6ab1a96d778f9d019c.png",
+            "uploads/10dc4ca165174079983c9d6a7447c14b.png",
+            "uploads/93631204867942539d8f67e7c8351959.png",
+            "uploads/80370eef7cda49298ecfbb47a61d3f54.jpg"
         ],
         "name": {
             "uz": "NG Brown Romance (олий навли Колумбия какао кукуни ва ганодерма экстракти) — мазали ва хушбўй иссиқ гано шоколад бўлиб, организмга роҳат ва қувват бағишлайди.",
@@ -1070,10 +1076,10 @@
         },
         "badgeType": "",
         "images": [
-            "/uploads/eb176081474c4a8cabe73c1d9bc31736.png",
-            "/uploads/1ca7ea4ffe064fbeada4bee580bfa8bd.png",
-            "/uploads/b4a10cf4562b4dc1a59ca8ec3c64f362.png",
-            "/uploads/7b131c5d18064bdc911674afdabcf3b2.png"
+            "uploads/eb176081474c4a8cabe73c1d9bc31736.png",
+            "uploads/1ca7ea4ffe064fbeada4bee580bfa8bd.png",
+            "uploads/b4a10cf4562b4dc1a59ca8ec3c64f362.png",
+            "uploads/7b131c5d18064bdc911674afdabcf3b2.png"
         ],
         "name": {
             "uz": "Excellium Gold",
@@ -1132,9 +1138,9 @@
         },
         "badgeType": "",
         "images": [
-            "/uploads/0b8e8d3fda3d4b5c8e77f9a2c405a11f.png",
-            "/uploads/07bd5243c6d64116a4809b89f27bf517.png",
-            "/uploads/55bb00a3a2db401a9ace3df8aaea2c56.png"
+            "uploads/0b8e8d3fda3d4b5c8e77f9a2c405a11f.png",
+            "uploads/07bd5243c6d64116a4809b89f27bf517.png",
+            "uploads/55bb00a3a2db401a9ace3df8aaea2c56.png"
         ],
         "name": {
             "uz": "Cordy Gold",
@@ -1195,9 +1201,9 @@
         },
         "badgeType": "",
         "images": [
-            "/uploads/b0133e40b7884571a5c5952cb4bac5e9.png",
-            "/uploads/48e02f4a12e4448cadea2403914bcd3e.png",
-            "/uploads/228ba56a5f3d444fbdbdb65a3d12e562.png"
+            "uploads/b0133e40b7884571a5c5952cb4bac5e9.png",
+            "uploads/48e02f4a12e4448cadea2403914bcd3e.png",
+            "uploads/228ba56a5f3d444fbdbdb65a3d12e562.png"
         ],
         "name": {
             "uz": "Reishi Gold",
@@ -1258,8 +1264,8 @@
         },
         "badgeType": "",
         "images": [
-            "/uploads/3a61db1812084b3b96c3876ac40e5a65.png",
-            "/uploads/e2fd774116fc4b2a8a5f7ed33ac59ee4.png"
+            "uploads/3a61db1812084b3b96c3876ac40e5a65.png",
+            "uploads/e2fd774116fc4b2a8a5f7ed33ac59ee4.png"
         ],
         "name": {
             "uz": "iCrystal- Қувват кулони",
